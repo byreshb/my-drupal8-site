@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implementing hook_theme().
+ *
+ * All variables used in twig files are declared here
+ */
+function representative_theme($existing, $type, $theme, $path)
+{
+
+  return [
+
+    'representative_list' => [
+
+      'variables' => [
+        'items' => [],
+        'title' => '',
+        'my_form' => [],
+        'no_result_message' => '',
+      ],
+
+      'render element' => 'form'
+    ],
+  ];
+
+}

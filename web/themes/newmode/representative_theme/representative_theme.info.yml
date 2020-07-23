@@ -1,0 +1,9 @@
+name: Representative set theme
+type: theme
+description: Theme for displaying list of political representatives
+package: NewMode
+core: 8.x
+
+libraries:
+  - representative_theme/global-styling
+  - representative_theme/global-scripts

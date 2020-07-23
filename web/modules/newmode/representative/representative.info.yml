@@ -1,0 +1,5 @@
+name: Representative Set
+description: Module to list representative set by postal code
+type: module
+package: NewMode
+core: 8.x

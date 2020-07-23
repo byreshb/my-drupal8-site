@@ -1,0 +1,6 @@
+representative.search:
+  path: '/political-representatives/list'
+  defaults:
+    _controller: '\Drupal\representative\Controller\RepresentativeController::content'
+  requirements:
+    _permission: 'access content'

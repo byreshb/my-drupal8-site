@@ -1,0 +1,47 @@
+{# This line is to enable intellisense in phpstorm IDE #}
+{# @var representative \Drupal\representative\Dto\RepresentativeDto #}
+
+<div id="rep-container" class="rep-container">
+
+  <small>Enter a Canadian Postal Code</small>
+  <div id="form-container">
+    {{ my_form }}
+  </div>
+
+  {% if items | length > 0 %}
+
+    <table id="rep-list" class="display">
+
+      <thead>
+
+      <tr>
+        <th>Name</th>
+        <th>Representative Set Name</th>
+        <th>District Name</th>
+      </tr>
+
+      </thead>
+
+      <tbody>
+
+      {% for representative in items %}
+        <tr>
+          <td>{{ representative.name }}</td>
+          <td>{{ representative.representativeSetName }}</td>
+          <td>{{ representative.districtName }}</td>
+        </tr>
+      {% endfor %}
+
+      </tbody>
+
+    </table>
+
+  {% else %}
+
+    {% if no_result_message %}
+      <strong>{{ no_result_message }}</strong>
+    {% endif %}
+
+  {% endif %}
+
+</div>

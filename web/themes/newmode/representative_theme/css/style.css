@@ -1,0 +1,76 @@
+/* Generic style */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.layout-container {
+  background-color: #efefef;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+/* Style for Search Form */
+#representative-form {
+  /*margin:auto;*/
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+#representative-form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+#edit-submit {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+#edit-submit:hover {
+  background: #0b7dda;
+}
+
+#representative-form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style of HTML table (Datatable) */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+thead {
+  background: lightblue;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dataTables_length {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/layout.css: {}
+      css/style.css: {}
+      css/colors.css: {}
+      # CDNs perform better than serving those files by application servers as they are be cached at client side
+      //cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css: {}
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css: {}
+
+global-scripts:
+  version: 1.x
+  js:
+    js/javascript.js: {}
+    # CDNs perform better than serving those files by application servers as they are be cached at client side
+    //cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js: {}
+  dependencies:
+    - core/jquery
